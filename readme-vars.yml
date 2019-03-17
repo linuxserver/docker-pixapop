@@ -4,7 +4,7 @@
 project_name: pixapop
 project_url: "https://github.com/bierdok/pixapop"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is gallery software at its easiest, it doesn't even require a database."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is an open-source SPA to view your photos in the easiest way possible."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
@@ -24,8 +24,6 @@ param_usage_include_net: false
 param_usage_include_env: true
 param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
-  - { env_var: "APP_USERNAME", env_value: "", desc: "Specify a username if you want to enable authentication." }
-  - { env_var: "APP_PASSWORD", env_value: "", desc: "Specify a password if you want to enable authentication." }
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "<path to config>", desc: "Stores config and logs for nginx base." }
@@ -44,6 +42,17 @@ opt_param_device_map: false
 opt_cap_add_param: false
 optional_block_1: false
 
+# optional container parameters
+opt_param_usage_include_env: true
+opt_param_env_vars:
+  - { env_var: "APP_USERNAME", env_value: "admin", desc: "Specify a username to enable authentication." }
+  - { env_var: "APP_PASSWORD", env_value: "admin", desc: "Specify a password to enable authentication." }
+opt_param_usage_include_vols: false
+opt_param_usage_include_ports: false
+opt_param_device_map: false
+opt_cap_add_param: false
+optional_block_1: false
+
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -51,4 +60,4 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - { date: "17.03.19:", desc: "Initial release" }
+  - { date: "17.03.19", desc: "Initial release" }

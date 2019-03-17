@@ -23,7 +23,7 @@ Find us at:
 [![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Pipeline-Builders/docker-pixapop/master)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-pixapop/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/pixapop/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/pixapop/latest/index.html)
 
-[Pixapop](https://github.com/bierdok/pixapop) is gallery software at its easiest, it doesn't even require a database.
+[Pixapop](https://github.com/bierdok/pixapop) is an open-source SPA to view your photos in the easiest way possible.
 
 [![pixapop](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png)](https://github.com/bierdok/pixapop)
 
@@ -54,8 +54,8 @@ docker create \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Europe/London \
-  -e APP_USERNAME= \
-  -e APP_PASSWORD= \
+  -e APP_USERNAME=admin `#optional` \
+  -e APP_PASSWORD=admin `#optional` \
   -p 80:80 \
   -v <path to config>:/config \
   -v <path to photos>:/photos \
@@ -79,8 +79,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-      - APP_USERNAME=
-      - APP_PASSWORD=
+      - APP_USERNAME=admin #optional
+      - APP_PASSWORD=admin #optional
     volumes:
       - <path to config>:/config
       - <path to photos>:/photos
@@ -99,8 +99,8 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
-| `-e APP_USERNAME=` | Specify a username if you want to enable authentication. |
-| `-e APP_PASSWORD=` | Specify a password if you want to enable authentication. |
+| `-e APP_USERNAME=admin` | Specify a username to enable authentication. |
+| `-e APP_PASSWORD=admin` | Specify a password to enable authentication. |
 | `-v /config` | Stores config and logs for nginx base. |
 | `-v /photos` | Your local folder of photos. |
 
@@ -166,4 +166,4 @@ Below are the instructions for updating containers:
 
 ## Versions
 
-* **17.03.19:** - Initial release
+* **17.03.19** - Initial release
