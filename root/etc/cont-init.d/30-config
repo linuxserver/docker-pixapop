@@ -11,8 +11,10 @@ else
 fi
 
 # create symlinks
+mkdir -p /var/www/html/public/media
 symlinks=( \
-/var/www/html/var
+/var/www/html/var \
+/var/www/html/public/media
 )
 
 for i in "${symlinks[@]}"; do
