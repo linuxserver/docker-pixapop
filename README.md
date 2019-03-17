@@ -25,7 +25,7 @@ Find us at:
 
 [Pixapop](https://github.com/bierdok/pixapop) is gallery software at its easiest, it doesn't even require a database.
 
-[![pixapop](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop-icon.png)](https://github.com/bierdok/pixapop)
+[![pixapop](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png)](https://github.com/bierdok/pixapop)
 
 ## Supported Architectures
 
