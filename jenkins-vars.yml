@@ -2,7 +2,7 @@
 
 # jenkins variables
 project_name: docker-pixapop
-external_type: github_commit
+external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
@@ -10,11 +10,11 @@ repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'bierdok'
   - EXT_REPO = 'pixapop'
-  - BUILD_VERSION_ARG = 'PIXAPOP_COMMIT'
+  - BUILD_VERSION_ARG = 'PIXAPOP_RELEASE'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-pixapop'
   - CONTAINER_NAME = 'pixapop'
-  - DOCKERHUB_IMAGE = 'linuxserver/pixapop'
+  - DOCKERHUB_IMAGE = 'lsiocommunity/pixapop'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/pixapop'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/pixapop'
   - DIST_IMAGE = 'alpine'

@@ -1,5 +1,5 @@
 server {
-  root /config/www/pixapop/public;
+  root /var/www/html/public;
   set $htpasswd_file /config/nginx/.htpasswd;
   set $auth_basic "Restricted";
   if (!-f $htpasswd_file) {

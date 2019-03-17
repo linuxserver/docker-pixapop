@@ -1,0 +1,30 @@
+#!/usr/bin/with-contenv bash
+
+# fix for linting
+declare config
+
+# setup authentification
+if [[ ${APP_USERNAME} && ${APP_PASSWORD} ]]; then
+    htpasswd -b -c /config/nginx/.htpasswd ${APP_USERNAME} ${APP_PASSWORD}
+else
+    rm /config/nginx/.htpasswd 2> /dev/null
+fi
+
+# create symlinks
+symlinks=( \
+/var/www/html/var
+)
+
+for i in "${symlinks[@]}"; do
+	[[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]] && \
+		rm -Rf "$i" && \
+		ln -s /config/"$(basename "$i")" "$i"
+	[[ -e "$i" && ! -L "$i" ]] && \
+		mv "$i" /config/"$(basename "$i")" && \
+		ln -s /config/"$(basename "$i")" "$i"
+done
+
+# setup permissions
+chown -R abc:abc \
+	/config \
+	/photos
