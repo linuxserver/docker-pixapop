@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG PIXAPOP_COMMIT
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="?"
+LABEL maintainer="bierdok"
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /tmp
