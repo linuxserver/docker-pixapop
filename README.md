@@ -121,7 +121,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-Any photos included into /photos will be presented as galleries splitted by month. Config settings are persistent and stored into /config.
+Any photos included in /photos will be presented as galleries split by month. Config settings are persistent and stored into /config.
 
 
 

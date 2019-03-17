@@ -56,7 +56,7 @@ optional_block_1: false
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
-  Any photos included into /photos will be presented as galleries splitted by month. Config settings are persistent and stored into /config.
+  Any photos included in /photos will be presented as galleries split by month. Config settings are persistent and stored into /config.
 
 # changelog
 changelogs:

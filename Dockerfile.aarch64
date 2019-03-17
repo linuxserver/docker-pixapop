@@ -6,7 +6,7 @@ COPY qemu-aarch64-static /usr/bin
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-ARG PIXAPOP_COMMIT
+ARG PIXAPOP_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="bierdok"
 
@@ -20,26 +20,42 @@ RUN \
  apk add --no-cache \
 	curl \
 	imagemagick \
-	jq \
-    php7-curl \
-    php7-ctype \
-    php7-dom \
-    php7-exif \
-    php7-iconv \
-    php7-imagick \
-    php7-intl \
-    php7-phar \
-    yarn && \
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
-    composer global require hirak/prestissimo
-
-RUN \
- echo "**** Tag this image with current version ****" && \
- if [ -z ${PIXAPOP_COMMIT+x} ]; then \
-        PIXAPOP_COMMIT=$(curl -sX GET https://api.github.com/repos/bierdok/pixapop/commits/master \
-        | jq -r '. | .sha'); \
+	php7-curl \
+	php7-ctype \
+	php7-dom \
+	php7-exif \
+	php7-iconv \
+	php7-imagick \
+	php7-intl \
+	php7-phar \
+	yarn && \
+ curl -sS \
+	https://getcomposer.org/installer \
+	| php -- --install-dir=/usr/local/bin --filename=composer && \
+ composer global require hirak/prestissimo && \
+ echo "**** Install PixaPop ****" && \
+ if [ -z ${PIXAPOP_RELEASE+x} ]; then \
+ 	PIXAPOP_RELEASE=$(curl -sX GET "https://api.github.com/repos/bierdok/pixapop/releases/latest" \
+        | awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
- echo ${PIXAPOP_COMMIT} > /version.txt
+ mkdir -p \
+        /tmp/pix/ \
+	/var/www/html && \
+ curl -o \
+	/tmp/pixapop.tar.gz -L \
+	"https://github.com/bierdok/pixapop/archive/${PIXAPOP_RELEASE}.tar.gz" && \
+ tar xf \
+	/tmp/pixapop.tar.gz -C \
+	/var/www/html --strip-components=1 && \
+ cd /var/www/html && \
+ composer install && \
+ yarn install && \
+ yarn build && \
+ echo "**** cleanup ****" && \
+ rm -rf \
+	/root/.composer \
+	/tmp/*
+
 
 # add local files
 COPY root/ /
