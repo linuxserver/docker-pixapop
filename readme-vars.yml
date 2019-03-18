@@ -60,4 +60,5 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "18.03.19", desc: "Add build dependencies" }
   - { date: "17.03.19", desc: "Initial release" }

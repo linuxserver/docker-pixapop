@@ -166,4 +166,5 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **18.03.19** - Add build dependencies
 * **17.03.19** - Initial release

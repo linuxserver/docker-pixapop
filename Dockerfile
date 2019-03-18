@@ -13,9 +13,12 @@ ENV COMPOSER_HOME /tmp
 ENV APP_ENV 'prod'
 
 RUN \
+ echo "**** install build packages ****" && \
+ apk add --no-cache --virtual=build-dependencies \
+    curl \
+	yarn && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-	curl \
 	imagemagick \
 	php7-curl \
 	php7-ctype \
@@ -24,8 +27,7 @@ RUN \
 	php7-iconv \
 	php7-imagick \
 	php7-intl \
-	php7-phar \
-	yarn && \
+	php7-phar && \
  curl -sS \
 	https://getcomposer.org/installer \
 	| php -- --install-dir=/usr/local/bin --filename=composer && \
@@ -49,6 +51,8 @@ RUN \
  yarn install && \
  yarn build && \
  echo "**** cleanup ****" && \
+ apk del --purge \
+    build-dependencies && \
  rm -rf \
 	/root/.composer \
 	/tmp/*
