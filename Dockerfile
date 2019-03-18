@@ -32,11 +32,11 @@ RUN \
 	https://getcomposer.org/installer \
 	| php -- --install-dir=/usr/local/bin --filename=composer && \
  composer global require hirak/prestissimo && \
- echo "**** Install PixaPop ****" && \
  if [ -z ${PIXAPOP_RELEASE+x} ]; then \
  	PIXAPOP_RELEASE=$(curl -sX GET "https://api.github.com/repos/bierdok/pixapop/releases/latest" \
         | awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
+ echo "**** install Pixapop ${PIXAPOP_RELEASE} ****" && \
  mkdir -p \
         /tmp/pix/ \
 	/var/www/html && \
