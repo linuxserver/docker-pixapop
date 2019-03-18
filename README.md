@@ -23,7 +23,7 @@ Find us at:
 [![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Pipeline-Builders/docker-pixapop/master)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-pixapop/job/master/)
 [![](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/pixapop/latest/badge.svg)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/pixapop/latest/index.html)
 
-[Pixapop](https://github.com/bierdok/pixapop) is an open-source SPA to view your photos in the easiest way possible.
+[Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.
 
 [![pixapop](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png)](https://github.com/bierdok/pixapop)
 
@@ -166,5 +166,6 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **18.03.19** - Update build dependencies
 * **18.03.19** - Add build dependencies
 * **17.03.19** - Initial release

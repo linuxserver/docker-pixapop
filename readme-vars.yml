@@ -5,7 +5,7 @@ project_name: pixapop
 lsio_project_name_short: lsiocommunity
 project_url: "https://github.com/bierdok/pixapop"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is an open-source SPA to view your photos in the easiest way possible."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) is an open-source single page application to view your photos in the easiest way possible."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
 
@@ -61,5 +61,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "18.03.19", desc: "Update build dependencies" }
   - { date: "18.03.19", desc: "Add build dependencies" }
   - { date: "17.03.19", desc: "Initial release" }
