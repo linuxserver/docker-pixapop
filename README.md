@@ -14,7 +14,7 @@ Find us at:
 * [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
 * [Podcast](https://anchor.fm/linuxserverio) - on hiatus. Coming back soon (late 2018).
 
-# [linuxserver/pixapop](https://github.com/linuxserver/docker-pixapop)
+# [lsiocommunity/pixapop](https://github.com/linuxserver/docker-pixapop)
 [![](https://img.shields.io/discord/354974912613449730.svg?logo=discord&label=LSIO%20Discord&style=flat-square)](https://discord.gg/YWrKVTn)
 [![](https://images.microbadger.com/badges/version/linuxserver/pixapop.svg)](https://microbadger.com/images/linuxserver/pixapop "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/linuxserver/pixapop.svg)](https://microbadger.com/images/linuxserver/pixapop "Get your own version badge on microbadger.com")
@@ -31,7 +31,7 @@ Find us at:
 
 Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/). 
 
-Simply pulling `linuxserver/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `lsiocommunity/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
@@ -60,7 +60,7 @@ docker create \
   -v <path to config>:/config \
   -v <path to photos>:/photos \
   --restart unless-stopped \
-  linuxserver/pixapop
+  lsiocommunity/pixapop
 ```
 
 
@@ -73,7 +73,7 @@ Compatible with docker-compose v2 schemas.
 version: "2"
 services:
   pixapop:
-    image: linuxserver/pixapop
+    image: lsiocommunity/pixapop
     container_name: pixapop
     environment:
       - PUID=1000
@@ -132,7 +132,7 @@ Any photos included in /photos will be presented as galleries split by month. Co
 * container version number 
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' pixapop`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/pixapop`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' lsiocommunity/pixapop`
 
 ## Updating Info
 
@@ -141,7 +141,7 @@ Most of our images are static, versioned, and require an image update and contai
 Below are the instructions for updating containers:  
   
 ### Via Docker Run/Create
-* Update the image: `docker pull linuxserver/pixapop`
+* Update the image: `docker pull lsiocommunity/pixapop`
 * Stop the running container: `docker stop pixapop`
 * Delete the container: `docker rm pixapop`
 * Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
