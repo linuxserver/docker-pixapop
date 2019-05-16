@@ -106,7 +106,7 @@ pixman-0.34.0-r6
 popt-1.16-r7
 readline-7.0.003-r1
 scanelf-1.2.3-r0
-shadow-4.5-r0
+shadow-4.5-r1
 shared-mime-info-1.10-r0
 ssl_client-1.29.3-r10
 tiff-4.0.10-r0
