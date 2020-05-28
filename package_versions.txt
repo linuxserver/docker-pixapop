@@ -29,7 +29,7 @@ harfbuzz-2.6.4-r0
 icu-libs-64.2-r1
 imagemagick-7.0.9.7-r0
 imagemagick-libs-7.0.9.7-r0
-jbig2dec-0.17-r0
+jbig2dec-0.17-r2
 lcms2-2.9-r1
 libacl-2.2.53-r0
 libattr-2.4.48-r0
@@ -51,6 +51,7 @@ libltdl-2.4.6-r7
 libmagic-5.37-r1
 libmount-2.34-r1
 libpng-1.6.37-r1
+libproc-3.3.16-r0
 libressl3.0-libcrypto-3.0.2-r0
 libressl3.0-libssl-3.0.2-r0
 librsvg-2.46.4-r0
@@ -106,6 +107,7 @@ php7-xmlwriter-7.3.18-r0
 pixman-0.38.4-r0
 pkgconf-1.6.3-r0
 popt-1.16-r7
+procps-3.3.16-r0
 readline-8.0.1-r0
 scanelf-1.2.4-r0
 shadow-4.7-r1
