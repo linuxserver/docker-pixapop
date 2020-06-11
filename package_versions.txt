@@ -55,7 +55,7 @@ libpng-1.6.37-r1
 libproc-3.3.16-r0
 libressl3.1-libcrypto-3.1.2-r0
 libressl3.1-libssl-3.1.2-r0
-librsvg-2.48.6-r0
+librsvg-2.48.7-r0
 libssl1.1-1.1.1g-r0
 libstdc++-9.3.0-r2
 libtasn1-4.16.0-r1
@@ -79,7 +79,7 @@ nano-4.9.3-r0
 ncurses-libs-6.2_p20200523-r0
 ncurses-terminfo-base-6.2_p20200523-r0
 nettle-3.5.1-r1
-nghttp2-libs-1.40.0-r0
+nghttp2-libs-1.41.0-r0
 nginx-1.18.0-r0
 openssl-1.1.1g-r0
 p11-kit-0.23.20-r5
