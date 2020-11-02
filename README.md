@@ -36,7 +36,7 @@ Find us at:
 [![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/lsiocommunity/pixapop)
 [![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/lsiocommunity/pixapop)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-pixapop%2Fjob%2Fmaster%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-pixapop/job/master/)
-[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Flsio-ci.ams3.digitaloceanspaces.com%2Flinuxserver%2Fpixapop%2Flatest%2Fci-status.yml)](https://lsio-ci.ams3.digitaloceanspaces.com/lsiocommunity/pixapop/latest/index.html)
+[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fpixapop%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/lsiocommunity/pixapop/latest/index.html)
 
 [Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.
 
@@ -46,7 +46,7 @@ Find us at:
 
 Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
-Simply pulling `lsiocommunity/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `ghcr.io/lsiocommunity/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
@@ -70,7 +70,7 @@ Compatible with docker-compose v2 schemas.
 version: "2.1"
 services:
   pixapop:
-    image: lsiocommunity/pixapop
+    image: ghcr.io/lsiocommunity/pixapop
     container_name: pixapop
     environment:
       - PUID=1000
@@ -100,7 +100,7 @@ docker run -d \
   -v <path to config>:/config \
   -v <path to photos>:/photos \
   --restart unless-stopped \
-  lsiocommunity/pixapop
+  ghcr.io/lsiocommunity/pixapop
 ```
 
 
@@ -169,7 +169,7 @@ We publish various [Docker Mods](https://github.com/linuxserver/docker-mods) to 
 * container version number
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' pixapop`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' lsiocommunity/pixapop`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' ghcr.io/lsiocommunity/pixapop`
 
 ## Updating Info
 
@@ -185,7 +185,7 @@ Below are the instructions for updating containers:
 * You can also remove the old dangling images: `docker image prune`
 
 ### Via Docker Run
-* Update the image: `docker pull lsiocommunity/pixapop`
+* Update the image: `docker pull ghcr.io/lsiocommunity/pixapop`
 * Stop the running container: `docker stop pixapop`
 * Delete the container: `docker rm pixapop`
 * Recreate a new container with the same docker run parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
@@ -215,7 +215,7 @@ cd docker-pixapop
 docker build \
   --no-cache \
   --pull \
-  -t lsiocommunity/pixapop:latest .
+  -t ghcr.io/lsiocommunity/pixapop:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
