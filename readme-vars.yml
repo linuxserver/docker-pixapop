@@ -27,8 +27,8 @@ param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to config>", desc: "Stores config and logs for nginx base." }
-  - { vol_path: "/photos", vol_host_path: "<path to photos>", desc: "Your local folder of photos." }
+  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Stores config and logs for nginx base." }
+  - { vol_path: "/photos", vol_host_path: "/path/to/photos", desc: "Your local folder of photos." }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "80", internal_port: "80", port_desc: "WebUI" }
@@ -61,6 +61,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "17.12.20", desc: "Move image to main linuxserver repo, add notice to container log" }
   - { date: "18.03.19", desc: "Update build dependencies" }
   - { date: "18.03.19", desc: "Add build dependencies" }
   - { date: "17.03.19", desc: "Initial release" }

@@ -30,7 +30,7 @@ RUN \
 	php7-phar && \
  curl -sS \
 	https://getcomposer.org/installer \
-	| php -- --install-dir=/usr/local/bin --filename=composer && \
+	| php -- --install-dir=/usr/local/bin --filename=composer --1 && \
  composer global require hirak/prestissimo && \
  if [ -z ${PIXAPOP_RELEASE+x} ]; then \
  	PIXAPOP_RELEASE=$(curl -sX GET "https://api.github.com/repos/bierdok/pixapop/releases/latest" \
