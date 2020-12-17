@@ -23,7 +23,7 @@ pipeline {
     LS_USER = 'linuxserver'
     LS_REPO = 'docker-pixapop'
     CONTAINER_NAME = 'pixapop'
-    DOCKERHUB_IMAGE = 'lsiocommunity/pixapop'
+    DOCKERHUB_IMAGE = 'linuxserver/pixapop'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/pixapop'
     PR_DOCKERHUB_IMAGE = 'lspipepr/pixapop'
     DIST_IMAGE = 'alpine'
