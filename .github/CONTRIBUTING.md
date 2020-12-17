@@ -24,7 +24,7 @@
 ## Readme
 
 If you would like to change our readme, please __**do not**__ directly edit the readme, as it is auto-generated on each commit.
-Instead edit the [readme-vars.yml](https://github.com/linuxserver/docker-pixapop/edit/master/readme-vars.yml).
+Instead edit the [readme-vars.yml](https://github.com/lsiocommunity/docker-pixapop/edit/master/readme-vars.yml).
 
 These variables are used in a template for our [Jenkins Builder](https://github.com/lsiocommunity/docker-jenkins-builder) as part of an ansible play.
 Most of these variables are also carried over to [docs.linuxserver.io](https://docs.linuxserver.io/images/docker-pixapop)
@@ -87,7 +87,7 @@ opt_param_volumes:
 
 ### Testing template changes
 
-After you make any changes to the templates, you can use our [Jenkins Builder](https://github.com/lsiocommunity/docker-jenkins-builder) to have the files updated from the modified templates. Please use the command found under `Running Locally` [on this page](https://github.com/linuxserver/docker-jenkins-builder/blob/master/README.md) to generate them prior to submitting a PR.
+After you make any changes to the templates, you can use our [Jenkins Builder](https://github.com/lsiocommunity/docker-jenkins-builder) to have the files updated from the modified templates. Please use the command found under `Running Locally` [on this page](https://github.com/lsiocommunity/docker-jenkins-builder/blob/master/README.md) to generate them prior to submitting a PR.
 
 ## Dockerfiles
 
@@ -114,7 +114,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Update the chagelog
 
-If you are modifying the Dockerfiles or any of the startup scripts in [root](https://github.com/linuxserver/docker-pixapop/tree/master/root), add an entry to the changelog
+If you are modifying the Dockerfiles or any of the startup scripts in [root](https://github.com/lsiocommunity/docker-pixapop/tree/master/root), add an entry to the changelog
 
 ```yml
 changelogs:

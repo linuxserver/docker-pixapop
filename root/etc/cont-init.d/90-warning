@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bash
+
+echo '
+******************************************************
+******************************************************
+*                                                    *
+*                                                    *
+*           This image has been moved                *
+*                                                    *
+*            We will continue releases               *
+*          under the main linuxserver repo           *
+*                                                    *
+*               linuxserver/pixapop                  *
+*                                                    *
+*       instead of lsiocommunity/pixapop             *
+*                                                    *
+*                                                    *
+*   https://hub.docker.com/r/linuxserver/pixapop     *
+*                                                    *
+*                                                    *
+******************************************************
+******************************************************'
