@@ -24,9 +24,9 @@
 ## Readme
 
 If you would like to change our readme, please __**do not**__ directly edit the readme, as it is auto-generated on each commit.
-Instead edit the [readme-vars.yml](https://github.com/lsiocommunity/docker-pixapop/edit/master/readme-vars.yml).
+Instead edit the [readme-vars.yml](https://github.com/linuxserver/docker-pixapop/edit/master/readme-vars.yml).
 
-These variables are used in a template for our [Jenkins Builder](https://github.com/lsiocommunity/docker-jenkins-builder) as part of an ansible play.
+These variables are used in a template for our [Jenkins Builder](https://github.com/linuxserver/docker-jenkins-builder) as part of an ansible play.
 Most of these variables are also carried over to [docs.linuxserver.io](https://docs.linuxserver.io/images/docker-pixapop)
 
 ### Fixing typos or clarify the text in the readme
@@ -42,7 +42,7 @@ There are variables for multiple parts of the readme, the most common ones are:
 
 The compose and run examples are also generated from these variables.
 
-We have a [reference file](https://github.com/lsiocommunity/docker-jenkins-builder/blob/master/vars/_container-vars-blank) in our Jenkins Builder.
+We have a [reference file](https://github.com/linuxserver/docker-jenkins-builder/blob/master/vars/_container-vars-blank) in our Jenkins Builder.
 
 These are prefixed with `param_` for required parameters, or `opt_param` for optional parameters, except for `cap_add`.
 Remember to enable param, if currently disabled. This differs between parameters, and can be seen in the reference file.
@@ -87,7 +87,7 @@ opt_param_volumes:
 
 ### Testing template changes
 
-After you make any changes to the templates, you can use our [Jenkins Builder](https://github.com/lsiocommunity/docker-jenkins-builder) to have the files updated from the modified templates. Please use the command found under `Running Locally` [on this page](https://github.com/lsiocommunity/docker-jenkins-builder/blob/master/README.md) to generate them prior to submitting a PR.
+After you make any changes to the templates, you can use our [Jenkins Builder](https://github.com/linuxserver/docker-jenkins-builder) to have the files updated from the modified templates. Please use the command found under `Running Locally` [on this page](https://github.com/linuxserver/docker-jenkins-builder/blob/master/README.md) to generate them prior to submitting a PR.
 
 ## Dockerfiles
 
@@ -97,12 +97,12 @@ If you are proposing additional packages to be added, ensure that you added the 
 ### Testing your changes
 
 ```
-git clone https://github.com/lsiocommunity/docker-pixapop.git
+git clone https://github.com/linuxserver/docker-pixapop.git
 cd docker-pixapop
 docker build \
   --no-cache \
   --pull \
-  -t lsiocommunity/pixapop:latest .
+  -t linuxserver/pixapop:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
@@ -114,7 +114,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Update the chagelog
 
-If you are modifying the Dockerfiles or any of the startup scripts in [root](https://github.com/lsiocommunity/docker-pixapop/tree/master/root), add an entry to the changelog
+If you are modifying the Dockerfiles or any of the startup scripts in [root](https://github.com/linuxserver/docker-pixapop/tree/master/root), add an entry to the changelog
 
 ```yml
 changelogs:
