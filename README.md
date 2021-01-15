@@ -7,8 +7,8 @@
 [![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
 [![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
 [![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
-[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/lsiocommunity "view the source for all of our repositories.")
-[![Open Collective](https://img.shields.io/opencollective/all/lsiocommunity.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/lsiocommunity "please consider helping us by either donating or contributing to our budget")
+[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
+[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
 The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring:
 
@@ -23,20 +23,20 @@ Find us at:
 * [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
 * [Discourse](https://discourse.linuxserver.io) - post on our community forum.
 * [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
-* [GitHub](https://github.com/lsiocommunity) - view the source for all of our repositories.
-* [Open Collective](https://opencollective.com/lsiocommunity) - please consider helping us by either donating or contributing to our budget
+* [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
+* [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
-# [lsiocommunity/pixapop](https://github.com/lsiocommunity/docker-pixapop)
+# [linuxserver/pixapop](https://github.com/linuxserver/docker-pixapop)
 
-[![GitHub Stars](https://img.shields.io/github/stars/lsiocommunity/docker-pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/lsiocommunity/docker-pixapop)
-[![GitHub Release](https://img.shields.io/github/release/lsiocommunity/docker-pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/lsiocommunity/docker-pixapop/releases)
-[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/lsiocommunity/docker-pixapop/packages)
+[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-pixapop)
+[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-pixapop/releases)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-pixapop/packages)
 [![GitLab Container Registry](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab)](https://gitlab.com/linuxserver.io/docker-pixapop/container_registry)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/lsiocommunity/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge)](https://microbadger.com/images/lsiocommunity/pixapop "Get your own version badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/lsiocommunity/pixapop)
-[![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/lsiocommunity/pixapop)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge)](https://microbadger.com/images/linuxserver/pixapop "Get your own version badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver/pixapop)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/pixapop.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver/pixapop)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-pixapop%2Fjob%2Fmaster%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-pixapop/job/master/)
-[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fpixapop%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/lsiocommunity/pixapop/latest/index.html)
+[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fpixapop%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/pixapop/latest/index.html)
 
 [Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.
 
@@ -46,7 +46,7 @@ Find us at:
 
 Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
-Simply pulling `ghcr.io/lsiocommunity/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `ghcr.io/linuxserver/pixapop` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
@@ -70,7 +70,7 @@ Compatible with docker-compose v2 schemas.
 version: "2.1"
 services:
   pixapop:
-    image: ghcr.io/lsiocommunity/pixapop
+    image: ghcr.io/linuxserver/pixapop
     container_name: pixapop
     environment:
       - PUID=1000
@@ -100,7 +100,7 @@ docker run -d \
   -v /path/to/config:/config \
   -v /path/to/photos:/photos \
   --restart unless-stopped \
-  ghcr.io/lsiocommunity/pixapop
+  ghcr.io/linuxserver/pixapop
 ```
 
 
@@ -159,7 +159,7 @@ Any photos included in /photos will be presented as galleries split by month. Co
 ## Docker Mods
 [![Docker Mods](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pixapop&query=%24.mods%5B%27pixapop%27%5D.mod_count&url=https%3A%2F%2Fraw.githubusercontent.com%2Flinuxserver%2Fdocker-mods%2Fmaster%2Fmod-list.yml)](https://mods.linuxserver.io/?mod=pixapop "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&query=%24.mods%5B%27universal%27%5D.mod_count&url=https%3A%2F%2Fraw.githubusercontent.com%2Flinuxserver%2Fdocker-mods%2Fmaster%2Fmod-list.yml)](https://mods.linuxserver.io/?mod=universal "view available universal mods.")
 
-We publish various [Docker Mods](https://github.com/lsiocommunity/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) as well as universal mods that can be applied to any one of our images can be accessed via the dynamic badges above.
+We publish various [Docker Mods](https://github.com/linuxserver/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) as well as universal mods that can be applied to any one of our images can be accessed via the dynamic badges above.
 
 
 ## Support Info
@@ -169,7 +169,7 @@ We publish various [Docker Mods](https://github.com/lsiocommunity/docker-mods) t
 * container version number
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' pixapop`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' ghcr.io/lsiocommunity/pixapop`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' ghcr.io/linuxserver/pixapop`
 
 ## Updating Info
 
@@ -185,7 +185,7 @@ Below are the instructions for updating containers:
 * You can also remove the old dangling images: `docker image prune`
 
 ### Via Docker Run
-* Update the image: `docker pull ghcr.io/lsiocommunity/pixapop`
+* Update the image: `docker pull ghcr.io/linuxserver/pixapop`
 * Stop the running container: `docker stop pixapop`
 * Delete the container: `docker rm pixapop`
 * Recreate a new container with the same docker run parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
@@ -210,12 +210,12 @@ Below are the instructions for updating containers:
 
 If you want to make local modifications to these images for development purposes or just to customize the logic:
 ```
-git clone https://github.com/lsiocommunity/docker-pixapop.git
+git clone https://github.com/linuxserver/docker-pixapop.git
 cd docker-pixapop
 docker build \
   --no-cache \
   --pull \
-  -t ghcr.io/lsiocommunity/pixapop:latest .
+  -t ghcr.io/linuxserver/pixapop:latest .
 ```
 
 The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
