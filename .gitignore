@@ -46,3 +46,4 @@ Temporary Items
 /tmp/
 qemu-aarch64-static
 qemu-arm-static
+.jenkins-external
