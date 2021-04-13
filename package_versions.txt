@@ -55,7 +55,7 @@ libpng-1.6.37-r1
 libproc-3.3.16-r0
 libressl3.1-libcrypto-3.1.2-r0
 libressl3.1-libssl-3.1.2-r0
-librsvg-2.48.9-r0
+librsvg-2.48.10-r0
 libssl1.1-1.1.1k-r0
 libstdc++-9.3.0-r2
 libtasn1-4.16.0-r1
