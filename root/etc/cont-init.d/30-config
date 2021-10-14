@@ -11,22 +11,24 @@ else
 fi
 
 # create symlinks
-mkdir -p /var/www/html/public/media
+mkdir -p /app/www/public/media
 symlinks=( \
-/var/www/html/var \
-/var/www/html/public/media
+/app/www/var \
+/app/www/public/media
 )
 
 for i in "${symlinks[@]}"; do
-	[[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]] && \
-		rm -Rf "$i" && \
-		ln -s /config/"$(basename "$i")" "$i"
-	[[ -e "$i" && ! -L "$i" ]] && \
-		mv "$i" /config/"$(basename "$i")" && \
-		ln -s /config/"$(basename "$i")" "$i"
+    if [[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]]; then
+        rm -Rf "$i"
+        ln -s /config/"$(basename "$i")" "$i"
+    fi
+    if [[ -e "$i" && ! -L "$i" ]]; then
+        mv "$i" /config/"$(basename "$i")"
+        ln -s /config/"$(basename "$i")" "$i"
+    fi
 done
 
 # setup permissions
 chown -R abc:abc \
-	/config \
-	/photos
+    /config \
+    /photos

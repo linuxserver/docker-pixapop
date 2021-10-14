@@ -230,7 +230,8 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **17.12.20** - Move image to main linuxserver repo, add notice to container log
-* **18.03.19** - Update build dependencies
-* **18.03.19** - Add build dependencies
-* **17.03.19** - Initial release
+* **20.08.22:** - Rebasing to alpine 3.15 with php8. Restructure nginx configs ([see changes announcement](https://info.linuxserver.io/issues/2022-08-20-nginx-base)).
+* **17.12.20:** - Move image to main linuxserver repo, add notice to container log
+* **18.03.19:** - Update build dependencies
+* **18.03.19:** - Add build dependencies
+* **17.03.19:** - Initial release
