@@ -117,6 +117,6 @@ ssl_client-1.31.1-r22
 tiff-4.1.0-r0
 tzdata-2022a-r0
 x265-libs-3.3-r1
-xz-5.2.5-r0
-xz-libs-5.2.5-r0
+xz-5.2.5-r1
+xz-libs-5.2.5-r1
 zlib-1.2.12-r0
