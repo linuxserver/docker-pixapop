@@ -11,8 +11,8 @@ brotli-libs-1.0.9-r1
 busybox-1.31.1-r22
 ca-certificates-20211220-r0
 ca-certificates-bundle-20211220-r0
-cairo-1.16.0-r4
-cairo-gobject-1.16.0-r4
+cairo-1.16.0-r5
+cairo-gobject-1.16.0-r5
 coreutils-8.32-r0
 cups-libs-2.3.3-r0
 dbus-libs-1.12.18-r0
