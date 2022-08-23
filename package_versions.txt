@@ -119,4 +119,4 @@ tzdata-2022a-r0
 x265-libs-3.3-r1
 xz-5.2.5-r1
 xz-libs-5.2.5-r1
-zlib-1.2.12-r1
+zlib-1.2.12-r3
